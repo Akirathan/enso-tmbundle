@@ -4,10 +4,10 @@
   <dict>
     <key>$schema</key>
     <string>https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json</string>
-	<key>fileTypes</key>
-	<array>
-		<string>enso</string>
-	</array>
+    <key>fileTypes</key>
+    <array>
+      <string>enso</string>
+    </array>
     <key>name</key>
     <string>Enso</string>
     <key>patterns</key>
@@ -43,7 +43,7 @@
             <key>name</key>
             <string>keyword.other</string>
             <key>match</key>
-            <string>\b(here|self|type)\b</string>
+            <string>\b(here|this|type)\b</string>
           </dict>
           <dict>
             <key>name</key>
@@ -147,6 +147,22 @@
                 <string>\"</string>
               </dict>
             </array>
+          </dict>
+          <dict>
+            <key>contentName</key>
+            <string>string.quoted.triple.begin</string>
+            <key>begin</key>
+            <string>^(\s*)("""|''')</string>
+            <key>end</key>
+            <string>^(?!\1\s+)(?!\s*$)</string>
+          </dict>
+          <dict>
+            <key>contentName</key>
+            <string>string.quoted.triple.middle</string>
+            <key>begin</key>
+            <string>^(\s*)[^\s].*("""|''')</string>
+            <key>end</key>
+            <string>^(?!\1\s+)(?!\s*$)</string>
           </dict>
           <dict>
             <key>name</key>
