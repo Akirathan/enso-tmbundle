@@ -1,4 +1,4 @@
-# enso-tmpbundle
+# enso-tmbundle
 TextMate bundle for Enso grammar
 
 Converted from [enso4igv](https://github.com/enso-org/enso/blob/develop/tools/enso4igv/src/main/resources/org/enso/tools/enso4igv/enso.tmLanguage.json).
