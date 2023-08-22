@@ -43,7 +43,7 @@
             <key>name</key>
             <string>keyword.other</string>
             <key>match</key>
-            <string>\b(here|this|type)\b</string>
+            <string>\b(self|type)\b</string>
           </dict>
           <dict>
             <key>name</key>
@@ -155,6 +155,14 @@
             <string>^(\s*)("""|''')</string>
             <key>end</key>
             <string>^(?!\1\s+)(?!\s*$)</string>
+            <key>beginCaptures</key>
+            <dict>
+              <key>2</key>
+              <dict>
+                <key>name</key>
+                <string>string.quoted.triple.begin</string>
+              </dict>
+            </dict>
           </dict>
           <dict>
             <key>contentName</key>
@@ -163,6 +171,14 @@
             <string>^(\s*)[^\s].*("""|''')</string>
             <key>end</key>
             <string>^(?!\1\s+)(?!\s*$)</string>
+            <key>beginCaptures</key>
+            <dict>
+              <key>2</key>
+              <dict>
+                <key>name</key>
+                <string>string.quoted.triple.begin</string>
+              </dict>
+            </dict>
           </dict>
           <dict>
             <key>name</key>
